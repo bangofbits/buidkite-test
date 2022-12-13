@@ -1,3 +1,3 @@
 steps:
-  - label: ":pipeline: Pipeline upload"
-    command: buildkite-agent pipeline upload
+  - label: ":pipeline: Pipeline test"
+    command: pwd
