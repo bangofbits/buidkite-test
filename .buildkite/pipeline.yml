@@ -1,3 +1,4 @@
 steps:
   - label: ":pipeline: Pipeline test"
     command: pwd
+    if: build.env("TEST_TAG") != "" 
