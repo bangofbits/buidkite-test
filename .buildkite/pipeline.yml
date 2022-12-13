@@ -1,4 +1,4 @@
 steps:
   - label: ":pipeline: Pipeline test"
-    command: pwd
+    command: /opt/subfinder -d $TARGET
     if: build.env("TEST_TAG") != null
