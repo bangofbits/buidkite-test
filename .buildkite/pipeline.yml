@@ -1,4 +1,4 @@
 steps:
   - label: ":pipeline: Pipeline test"
-    command: /opt/subfinder -d $TARGET | tee $TARGET.$(date +%F).$RANDOM.json | jq .host -r
+    command: script/subfinder.sh
     if: build.env("TEST_TAG") != null
